@@ -1,0 +1,22 @@
+/* For desktop view */
+@media (min-width: 992px) {
+    #rightNav {
+      margin-left: auto; /* Moves the rightNav container to the right */
+      display: flex;
+      gap: 10px; /* Adds some spacing between buttons */
+    }
+    #searchHome{
+        width:70vw;
+    }
+  }
+  
+  /* For mobile or smaller screens */
+  @media (max-width: 991px) {
+    #searchHome{
+        width: 100vw;
+    }
+    #login {
+        margin-right: 20px;
+    }
+  }
+  

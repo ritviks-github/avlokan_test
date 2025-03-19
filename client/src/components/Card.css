@@ -1,0 +1,53 @@
+/* src/Card.css */
+
+.card {
+    background-color: #ffffff; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow from child elements */
+    width: 250px; /* Fixed width for consistency */
+    margin: 10px; /* Spacing between cards */
+    transition: transform 0.2s; /* Smooth hover effect */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    justify-content: space-between; /* Space out the content */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .card-image {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+  }
+  
+  .card-content {
+    padding: 15px; /* Padding around the content */
+    text-align: center; /* Center align text */
+  }
+  
+  .card-title {
+    font-size: 1.25em; /* Larger title font size */
+    margin: 10px 0; /* Spacing around title */
+    color: #333; /* Darker color for title */
+  }
+  
+  .card-description {
+    font-size: 0.9em; /* Slightly smaller font size */
+    color: #666; /* Lighter color for description */
+    margin: 0; /* Remove default margin */
+  }
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .product-carousel {
+      flex-direction: column; /* Stack cards on smaller screens */
+      align-items: center; /* Center cards */
+    }
+  
+    .card {
+      width: 90%; /* Full width on small screens */
+    }
+  }
+    
